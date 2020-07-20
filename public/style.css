@@ -5,6 +5,7 @@ body {
   font-family: 'Mulish', sans-serif;
   color: #1f1f1f;
   background-color: #ECF3F8;
+  font-size: 18px;
 }
 
 .side-nav {
@@ -63,7 +64,7 @@ i {
 
 .text {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 50%;
   text-align: center;
 }
