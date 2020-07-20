@@ -105,3 +105,15 @@ h2 {
 .email {
   margin-top: -25px;
 }
+
+.footer {
+  text-align: center;
+  background-color: #6b8196;
+  margin-left: -15px;
+  color: #f1f1f1;
+  padding: 10px;
+}
+
+.about {
+  width: 96%;
+}
