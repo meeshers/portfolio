@@ -85,7 +85,7 @@ h2 {
   color: #4A6074;
 }
 
-.project-container {
+/* .project-container {
   display: flex;
   padding: 10px;
   margin: 10px;
@@ -100,7 +100,7 @@ h2 {
 
 .description {
   padding-left: 15px;
-}
+} */
 
 .email {
   margin-top: -25px;
@@ -150,4 +150,9 @@ form textarea {
 
 .exp {
   float: right;
+}
+
+a.btn.btn-primary {
+  background-color: #4A6074;
+  border: none;
 }

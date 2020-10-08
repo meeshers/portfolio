@@ -7,6 +7,14 @@
   <link rel="stylesheet" href="./public/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
   <script src="./public/app.js" defer></script>
   <title>Michelle Tran</title>
 </head>
@@ -39,80 +47,165 @@
     <div id="about">
       <h2>About</h2>
       <hr>
-      <p class="about">Hello! I'm Michelle, a software engineer based in the Orange County Area. I seek to expand and solidify my knowledge and put them into practice by creating personal projects and collaborating with other developers. I aim to create user-friendly designs and often draw inspiration from nature, arcade games, video games, and amazing artists!</p>
+      <p class="about">Hello! I'm Michelle, a software engineer based in the Orange County Area. I seek to expand and
+        solidify my knowledge and put them into practice by creating personal projects and collaborating with other
+        developers. I aim to create user-friendly designs and often draw inspiration from nature, arcade games, video
+        games, and amazing artists!</p>
     </div>
 
-    <div id="projects">
+
+    <div id="projects container">
       <h2>Projects</h2>
       <hr>
-      <!-- beat that -->
-      <div class="project-container">
-        <div class="project-images">
-          <img src="./public/images/beat-that/1.png" alt="" srcset="">
+
+      <!-- Keeb Dreams -->
+      <div class="card" style="width: 25rem;">
+        <img src="./public/images/cute_keebs/home.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Keeb Dreams</h5>
+          <p class="card-text">Dream Keebs is a project that I hope to develop into a powerful tool for both new and old
+            keyboard
+            enthusiasts. It allows the user to sign in and keep track of the keyboards they already have and the ones
+            they
+            would love to create. The user can also keep track of any interest checks or group buys they are interested
+            in. While the parts in the database are currently bare, it aims to be a community-driven application where
+            the
+            users can contribute by adding various parts with their description. Please note that the login and signup
+            functionality still needs work!</p>
+          <a href="https://github.com/meeshers/cute_keebs" class="btn btn-primary">Code</a>
+          <a href="https://dream-keebs.herokuapp.com/" class="btn btn-primary">Demo</a>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">HTML/CSS</li>
+            <li class="list-group-item">Javascript</li>
+            <li class="list-group-item">Python</li>
+            <li class="list-group-item">Django</li>
+            <li class="list-group-item">Semantic UI</li>
+            <li class="list-group-item">Heroku</li>
+          </ul>
         </div>
-        <div class="description">
-          <h3>Beat That!</h3>
-          <p>"Beat That!" is a solo project that was created after two weeks of learning the fundamentals. It is a quick
+      </div>
+
+      <!-- Farm to Table -->
+      <div class="card" style="width: 25rem;">
+        <img src="./public/images/farm_to_table/home.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Farm to Table</h5>
+          <p class="card-text">"Farm-to-table" is a partner project with one other developer that utilizes the MEN stack
+            with the deadline
+            of one week. The idea behind this project was to connect customers to local farms in order to purchase fresh
+            produce. My contributions include stylizing of client-side interface and user authentication.</p>
+          <a href="https://github.com/meeshers/farm-to-table" class="btn btn-primary">Code</a>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">HTML/CSS</li>
+            <li class="list-group-item">Javascript</li>
+            <li class="list-group-item">MongoDB</li>
+            <li class="list-group-item">Express.js</li>
+            <li class="list-group-item">Node.js</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Beat that! -->
+      <div class="card" style="width: 25rem;">
+        <img src="./public/images/beat-that/1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Beat That!</h5>
+          <p class="card-text">"Beat That!" is a solo project that was created after two weeks of learning the
+            fundamentals. It is a quick
             dice game in which the goal is to roll the dice and play the highest number that can be created to beat the
-            CPU. Feel free to play the game <a
-            href="https://meeshers.github.io/beat-that/" target="_blank">here.</a></p>
-          <p>Technologies used: javascript, jquery, DOM manipulation </p>
+            CPU.</p>
+          <a href="https://github.com/meeshers/beat-that" class="btn btn-primary">Code</a>
+          <a href="https://meeshers.github.io/beat-that/" class="btn btn-primary">Demo</a>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">HTML/CSS</li>
+            <li class="list-group-item">Javascript</li>
+            <li class="list-group-item">jQuery</li>
+            <li class="list-group-item">DOM manipulation</li>
+          </ul>
         </div>
       </div>
 
       <!-- React Pics -->
-      <div class="project-container">
-        <div class="project-images">
-          <img src="./public/images/react-pics.png" alt="" srcset="">
-        </div>
-        <div class="description">
-          <h3>React Pics</h3>
-          <p>React Pics is a solo project utilizing Unsplash API to explore and further understand all the concepts of React.  Its purpose is to receive a search input and display the top 10 photos related to that search term. </p>
-          <p>Technologies used: html/css, javascript, react, unsplash api, semantic ui, grid css</p>
+      <div class="card" style="width: 25rem;">
+        <img src="./public/images/react-pics.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">React Pics</h5>
+          <p class="card-text">React Pics is a solo project utilizing Unsplash API to explore and further understand all
+            the concepts of React. Its purpose is to receive a search input and display the top 10 photos related to
+            that search term.</p>
+          <a href="https://github.com/meeshers/react-pics" class="btn btn-primary">Code</a>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">HTML/CSS</li>
+            <li class="list-group-item">Javascript</li>
+            <li class="list-group-item">React</li>
+            <li class="list-group-item">Semantic UI</li>
+            <li class="list-group-item">Unsplash API</li>
+          </ul>
         </div>
       </div>
 
-      <!-- farm to table -->
-      <div class="project-container">
-        <div class="project-images">
-          <img src="./public/images/farm_to_table/home.jpg" alt="" srcset="">
-        </div>
-        <div class="description">
-          <h3>Farm-to-table</h3>
-          <p>"Farm-to-table" is a partner project with one other developer that utilizes the MEN stack with the deadline
-            of one week. The idea behind this project was to connect customers to local farms in order to purchase fresh
-            produce. My contributions include stylizing of client-side interface and user authentication.</p>
-          <p>Technologies used: html/css, javascript, mongodb, mongoose, express.js, node.js</p>
-        </div>
-      </div>
-
-      <!-- collabathon -->
-      <div class="project-container">
-        <div class="project-images">
-          <img src="./public/images/collab/ss.png" alt="" srcset="">
-        </div>
-        <div class="description">
-          <h3>X-games collab</h3>
-          <p>Created with one other developer and one UX designer, we were given less than two days to collaborate and
+      <!-- Collabathon -->
+      <div class="card" style="width: 25rem;">
+        <img src="./public/images/collab/ss.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Collabathon</h5>
+          <p class="card-text">Created with one other developer and one UX designer, we were given less than two days to
+            collaborate and
             create a mobile-friendly app that would handle a subscription form and allow the "business" to view how many
             email sign-ups they receive via the dashboard. My focus was on both the frontend and backend for the form
             validation.</p>
-          <p>Technologies used: html/css, javascript, bootstrap, python, mongodb, mongoose</p>
+          <a href="https://github.com/meeshers/collabathon-ux" class="btn btn-primary">Code</a>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">HTML/CSS</li>
+            <li class="list-group-item">Javascript</li>
+            <li class="list-group-item">Python</li>
+            <li class="list-group-item">Django</li>
+            <li class="list-group-item">Bootstrap</li>
+          </ul>
         </div>
       </div>
 
-      <!-- keeb dreams -->
-      <div class="project-container">
-        <div class="project-images">
-          <img src="./public/images/cute_keebs/home.jpg" alt="" srcset="">
-        </div>
-        <div class="description">
-          <h3>Dream Keebs</h3>
-          <p>Dream Keebs is a project that I hope to develop into a powerful tool for both new and old keyboard enthusiasts. It allows the user to sign in and keep track of the keyboards they already have and the ones they would love to create. The user can also keep track of any interest checks or group buys they are interested in. While the parts in the database are currently bare, it aims to be a community-driven application where the users can contribute by adding various parts with their description. Visit the website <a
-            href="https://dream-keebs.herokuapp.com/" target="_blank">here.</a> To experience the full site, please log in using the following information: <b>Username:</b> meesh <b>Password:</b> kenshin123 </p>
-          <p>Technologies used: html/css, python, mongoDB, mongoose, javascript, semantic ui, psql, django</p>
+      <!-- NotFacebook -->
+      <div class="card" style="width: 25rem;">
+        <img src="./public/images/notfacebook/Screenshot from 2020-10-08 12-43-31.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">NotFacebook</h5>
+          <p class="card-text">"NotFacebook" is a solo project to learn more in depth about PHP and learning how to make calls to the database with MySQL. It is still a work in progress, but currently has the following functionality: adding and removing friends, making posts, infinite scrolling, profile pages, messaging system. </p>
+          <a href="https://github.com/meeshers/php-social-media" class="btn btn-primary">Code</a>
+
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">HTML/CSS</li>
+            <li class="list-group-item">Javascript</li>
+            <li class="list-group-item">PHP</li>
+            <li class="list-group-item">MySQL</li>
+          </ul>
         </div>
       </div>
+
+    </div>
+
+    <!-- keeb dreams
+    <div class="project-container">
+      <div class="project-images">
+        <img src="./public/images/cute_keebs/home.jpg" alt="" srcset="">
+      </div>
+      <div class="description">
+        <h3>Dream Keebs</h3>
+        <p>Dream Keebs is a project that I hope to develop into a powerful tool for both new and old keyboard
+          enthusiasts. It allows the user to sign in and keep track of the keyboards they already have and the ones they
+          would love to create. The user can also keep track of any interest checks or group buys they are interested
+          in. While the parts in the database are currently bare, it aims to be a community-driven application where the
+          users can contribute by adding various parts with their description. Visit the website <a
+            href="https://dream-keebs.herokuapp.com/" target="_blank">here.</a> To experience the full site, please log
+          in using the following information: <b>Username:</b> meesh <b>Password:</b> kenshin123 </p>
+        <p>Technologies used: html/css, python, mongoDB, mongoose, javascript, semantic ui, psql, django</p>
+      </div>
+    </div> -->
     </div>
 
     <div id="contact">
@@ -121,7 +214,7 @@
       <p>Interested in working with me? Fill out the following form below!</p>
       <div class="contact">
         <form action="https://formspree.io/mnqglbbq" method="POST">
-          <label>Name: </label> 
+          <label>Name: </label>
           <br>
           <input type="text" name="name" required>
           <br>
@@ -129,9 +222,9 @@
           <br>
           <input type="email" name="_replyto" required>
           <br>
-          <label>Message: </label> 
+          <label>Message: </label>
           <br>
-          <textarea  type="text" name="message" required></textarea>
+          <textarea type="text" name="message" required></textarea>
           <br>
           <input class="submit" type="submit" value="Send">
         </form>
