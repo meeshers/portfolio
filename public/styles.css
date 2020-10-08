@@ -11,15 +11,27 @@ body {
 #projects {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 #projects .card {
   margin: 8px;
 }
 
+#projects .card:hover {
+  margin: 8px;
+  background-color: #9cbd9a;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
 a.btn.btn-primary {
   background-color: #4A6074;
   border: none;
+  margin: 5px;
 }
 .btn.btn-primary {
   background-color: #4A6074;
@@ -140,3 +152,4 @@ form label {
   width: 50%;
   margin: 0 auto;
 }
+
