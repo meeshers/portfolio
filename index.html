@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./public/style.css">
+  <!-- <link rel="stylesheet" href="./public/style.css"> -->
+  <link rel="stylesheet" href="./public/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -20,7 +21,7 @@
 </head>
 
 <body>
-  <div class="side-nav">
+  <!-- <div class="side-nav">
     <h2>Michelle Tran</h2>
     <p class="email">mtran1205@gmail.com</p>
     <nav class="personal">
@@ -42,8 +43,32 @@
       <h2>SOFTWARE ENGINEER</h2>
     </div>
   </div>
-  <main>
+  <main> -->
 
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link active" href="#about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#projects">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="resume.html">Resume</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contact">Contact</a>
+    </li>
+  </ul>
+
+  <div class="image">
+    <img src="./public/images/bluecat.jpg" alt="" srcset="">
+    <div class="text">
+      <h1>MICHELLE TRAN</h1>
+      <h2>SOFTWARE ENGINEER</h2>
+    </div>
+  </div>
+
+  <div class="container">
     <div id="about">
       <h2>About</h2>
       <hr>
@@ -53,13 +78,14 @@
         games, and amazing artists!</p>
     </div>
 
-
-    <div id="projects container">
+    <div class="title">
       <h2>Projects</h2>
       <hr>
+    </div>
+    <div id="projects">
 
       <!-- Keeb Dreams -->
-      <div class="card" style="width: 25rem;">
+      <div class="card" style="width: 25rem; ">
         <img src="./public/images/cute_keebs/home.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Keeb Dreams</h5>
@@ -75,76 +101,14 @@
           <a href="https://github.com/meeshers/cute_keebs" class="btn btn-primary">Code</a>
           <a href="https://dream-keebs.herokuapp.com/" class="btn btn-primary">Demo</a>
 
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">HTML/CSS</li>
-            <li class="list-group-item">Javascript</li>
-            <li class="list-group-item">Python</li>
-            <li class="list-group-item">Django</li>
-            <li class="list-group-item">Semantic UI</li>
-            <li class="list-group-item">Heroku</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Farm to Table -->
-      <div class="card" style="width: 25rem;">
-        <img src="./public/images/farm_to_table/home.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Farm to Table</h5>
-          <p class="card-text">"Farm-to-table" is a partner project with one other developer that utilizes the MEN stack
-            with the deadline
-            of one week. The idea behind this project was to connect customers to local farms in order to purchase fresh
-            produce. My contributions include stylizing of client-side interface and user authentication.</p>
-          <a href="https://github.com/meeshers/farm-to-table" class="btn btn-primary">Code</a>
-
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">HTML/CSS</li>
-            <li class="list-group-item">Javascript</li>
-            <li class="list-group-item">MongoDB</li>
-            <li class="list-group-item">Express.js</li>
-            <li class="list-group-item">Node.js</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Beat that! -->
-      <div class="card" style="width: 25rem;">
-        <img src="./public/images/beat-that/1.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Beat That!</h5>
-          <p class="card-text">"Beat That!" is a solo project that was created after two weeks of learning the
-            fundamentals. It is a quick
-            dice game in which the goal is to roll the dice and play the highest number that can be created to beat the
-            CPU.</p>
-          <a href="https://github.com/meeshers/beat-that" class="btn btn-primary">Code</a>
-          <a href="https://meeshers.github.io/beat-that/" class="btn btn-primary">Demo</a>
-
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">HTML/CSS</li>
-            <li class="list-group-item">Javascript</li>
-            <li class="list-group-item">jQuery</li>
-            <li class="list-group-item">DOM manipulation</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- React Pics -->
-      <div class="card" style="width: 25rem;">
-        <img src="./public/images/react-pics.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">React Pics</h5>
-          <p class="card-text">React Pics is a solo project utilizing Unsplash API to explore and further understand all
-            the concepts of React. Its purpose is to receive a search input and display the top 10 photos related to
-            that search term.</p>
-          <a href="https://github.com/meeshers/react-pics" class="btn btn-primary">Code</a>
-
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">HTML/CSS</li>
-            <li class="list-group-item">Javascript</li>
-            <li class="list-group-item">React</li>
-            <li class="list-group-item">Semantic UI</li>
-            <li class="list-group-item">Unsplash API</li>
-          </ul>
+          <div class="technologies">
+            <span class="badge badge-pill badge-secondary">HTML/CSS</span>
+            <span class="badge badge-pill badge-secondary">Javascript</span>
+            <span class="badge badge-pill badge-secondary">Python</span>
+            <span class="badge badge-pill badge-secondary">Django</span>
+            <span class="badge badge-pill badge-secondary">Semantic UI</span>
+            <span class="badge badge-pill badge-secondary">Heroku</span>
+          </div>
         </div>
       </div>
 
@@ -160,13 +124,77 @@
             validation.</p>
           <a href="https://github.com/meeshers/collabathon-ux" class="btn btn-primary">Code</a>
 
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">HTML/CSS</li>
-            <li class="list-group-item">Javascript</li>
-            <li class="list-group-item">Python</li>
-            <li class="list-group-item">Django</li>
-            <li class="list-group-item">Bootstrap</li>
-          </ul>
+
+          <div class="technologies">
+            <span class="badge badge-pill badge-secondary">HTML/CSS</span>
+            <span class="badge badge-pill badge-secondary">Javascript</span>
+            <span class="badge badge-pill badge-secondary">Python</span>
+            <span class="badge badge-pill badge-secondary">Django</span>
+            <span class="badge badge-pill badge-secondary">Bootstrap</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Farm to Table -->
+      <div class="card" style="width: 25rem;">
+        <img src="./public/images/farm_to_table/home.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Farm to Table</h5>
+          <p class="card-text">"Farm-to-table" is a partner project with one other developer that utilizes the MEN stack
+            with the deadline
+            of one week. The idea behind this project was to connect customers to local farms in order to purchase fresh
+            produce. My contributions include stylizing of client-side interface and user authentication.</p>
+          <a href="https://github.com/meeshers/farm-to-table" class="btn btn-primary">Code</a>
+
+          <div class="technologies">
+            <span class="badge badge-pill badge-secondary">HTML/CSS</span>
+            <span class="badge badge-pill badge-secondary">Javascript</span>
+            <span class="badge badge-pill badge-secondary">MongoDB</span>
+            <span class="badge badge-pill badge-secondary">Express.js</span>
+            <span class="badge badge-pill badge-secondary">Node.js</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Beat that! -->
+      <div class="card" style="width: 25rem;">
+        <img src="./public/images/beat-that/1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Beat That!</h5>
+          <p class="card-text">"Beat That!" is a solo project that was created after two weeks of learning the
+            fundamentals. It is a quick
+            dice game in which the goal is to roll the dice and play the highest number that can be created to beat the
+            CPU.</p>
+          <a href="https://github.com/meeshers/beat-that" class="btn btn-primary">Code</a>
+          <a href="https://meeshers.github.io/beat-that/" class="btn btn-primary">Demo</a>
+
+          <div class="technologies">
+            <span class="badge badge-pill badge-secondary">HTML/CSS</span>
+            <span class="badge badge-pill badge-secondary">Javascript</span>
+            <span class="badge badge-pill badge-secondary">jQuery</span>
+            <span class="badge badge-pill badge-secondary">DOM manipulation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- React Pics -->
+      <div class="card" style="width: 25rem;">
+        <img src="./public/images/react-pics.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">React Pics</h5>
+          <p class="card-text">React Pics is a solo project utilizing Unsplash API to explore and further understand all
+            the concepts of React. Its purpose is to receive a search input and display the top 10 photos related to
+            that search term.</p>
+          <a href="https://github.com/meeshers/react-pics" class="btn btn-primary">Code</a>
+
+          <div class="technologies">
+            <span class="badge badge-pill badge-secondary">HTML/CSS</span>
+            <span class="badge badge-pill badge-secondary">Javascript</span>
+            <span class="badge badge-pill badge-secondary">React</span>
+            <span class="badge badge-pill badge-secondary">Semantic UI</span>
+            <span class="badge badge-pill badge-secondary">Unsplash API</span>
+          </div>
+
         </div>
       </div>
 
@@ -175,15 +203,19 @@
         <img src="./public/images/notfacebook/Screenshot from 2020-10-08 12-43-31.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">NotFacebook</h5>
-          <p class="card-text">"NotFacebook" is a solo project to learn more in depth about PHP and learning how to make calls to the database with MySQL. It is still a work in progress, but currently has the following functionality: adding and removing friends, making posts, infinite scrolling, profile pages, messaging system. </p>
+          <p class="card-text">"NotFacebook" is a solo project to learn more in depth about PHP and learning how to make
+            calls to the database with MySQL. It is still a work in progress, but currently has the following
+            functionality: adding and removing friends, making posts, infinite scrolling, profile pages, messaging
+            system.
+          </p>
           <a href="https://github.com/meeshers/php-social-media" class="btn btn-primary">Code</a>
 
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">HTML/CSS</li>
-            <li class="list-group-item">Javascript</li>
-            <li class="list-group-item">PHP</li>
-            <li class="list-group-item">MySQL</li>
-          </ul>
+          <div class="technologies">
+            <span class="badge badge-pill badge-secondary">HTML/CSS</span>
+            <span class="badge badge-pill badge-secondary">Javascript</span>
+            <span class="badge badge-pill badge-secondary">PHP</span>
+            <span class="badge badge-pill badge-secondary">MySQL</span>
+          </div>
         </div>
       </div>
 
@@ -206,34 +238,36 @@
         <p>Technologies used: html/css, python, mongoDB, mongoose, javascript, semantic ui, psql, django</p>
       </div>
     </div> -->
-    </div>
+  </div>
 
-    <div id="contact">
-      <h2>Contact</h2>
-      <hr>
-      <p>Interested in working with me? Fill out the following form below!</p>
-      <div class="contact">
-        <form action="https://formspree.io/mnqglbbq" method="POST">
-          <label>Name: </label>
-          <br>
-          <input type="text" name="name" required>
-          <br>
-          <label>Email: </label>
-          <br>
-          <input type="email" name="_replyto" required>
-          <br>
-          <label>Message: </label>
-          <br>
-          <textarea type="text" name="message" required></textarea>
-          <br>
-          <input class="submit" type="submit" value="Send">
-        </form>
-      </div>
+  <div id="contact">
+    <h2>Contact</h2>
+    <hr>
+    <p>Interested in working with me? Fill out the following form below!</p>
+    <div class="contact">
+      <form action="https://formspree.io/mnqglbbq" method="POST">
+        <label>Name: </label>
+        <br>
+        <input type="text" name="name" required>
+        <br>
+        <label>Email: </label>
+        <br>
+        <input type="email" name="_replyto" required>
+        <br>
+        <label>Message: </label>
+        <br>
+        <textarea type="text" name="message" required></textarea>
+        <br>
+        <input class="submit" type="submit" value="Send">
+      </form>
     </div>
+  </div>
 
-    <div class="footer">
-      &copy;2020 Michelle Tran
-    </div>
+  </div>
+
+  <div class="footer">
+    &copy;2020 Michelle Tran
+  </div>
   </main>
 </body>
 
