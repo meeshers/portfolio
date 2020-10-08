@@ -21,10 +21,19 @@ a.btn.btn-primary {
   background-color: #4A6074;
   border: none;
 }
+.btn.btn-primary {
+  background-color: #4A6074;
+  border: none;
+}
+
+.btn.btn-primary:hover {
+  background-color: #6b8196;
+}
 
 .image {
   position: relative;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .image img {
@@ -41,4 +50,93 @@ a.btn.btn-primary {
   background-color: rgba(255,255,255,.7);
   padding: 20px;
   border-radius: 10px;
+}
+
+ul.nav.justify-content-end {
+  background-color: #6b8196;
+}
+
+a.nav-link {
+  color: white;
+}
+a.nav-link:hover {
+  color: rgb(176, 177, 180);
+}
+
+.hr {
+  border: 2px solid #4A6074;
+  width: 100%;
+  height: 2px;
+}
+
+.footer {
+  text-align: center;
+  background-color: #6b8196;
+  color: #f1f1f1;
+  padding: 10px;
+}
+
+.technologies {
+  margin-top: -20px;
+}
+
+h2 {
+  color: #4A6074;
+}
+
+h5.card-title {
+  text-align: center;
+  color: #4A6074;
+}
+
+form {
+  padding: 10px;
+  margin: 5px;
+}
+
+form input[type=text], input[type=email] {
+  
+  width: 500px;
+  height: 24px;
+}
+
+form textarea {
+  
+  width: 500px;
+  height: 75px;
+}
+
+form label {
+  margin-right: 10px;
+}
+
+.contact {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.submit {
+  width: 100%;
+}
+
+.links i {
+  color: #4A6074;
+}
+
+.links i:hover {
+  color: #6b8196;
+}
+
+.links {
+  font-size: 30px;
+}
+
+.footer a {
+  color: #f1f1f1;
+}
+
+.resume {
+  width: 50%;
+  margin: 0 auto;
 }

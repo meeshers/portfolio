@@ -156,3 +156,7 @@ a.btn.btn-primary {
   background-color: #4A6074;
   border: none;
 }
+
+form label {
+  margin-right: 10px;
+}

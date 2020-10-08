@@ -16,35 +16,10 @@
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
 
-  <script src="./public/app.js" defer></script>
   <title>Michelle Tran</title>
 </head>
 
 <body>
-  <!-- <div class="side-nav">
-    <h2>Michelle Tran</h2>
-    <p class="email">mtran1205@gmail.com</p>
-    <nav class="personal">
-      <a href="https://www.linkedin.com/in/mich-tran" target="_blank"><i class="fa fa-linkedin-square"
-          aria-hidden="true"></i></a>
-      <a href="https://github.com/meeshers" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-    </nav>
-    <nav class="nav">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="resume.html">Resume</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-  <div class="image">
-    <img src="./public/images/bluecat.jpg" alt="" srcset="">
-    <div class="text">
-      <h1>MICHELLE TRAN</h1>
-      <h2>SOFTWARE ENGINEER</h2>
-    </div>
-  </div>
-  <main> -->
-
   <ul class="nav justify-content-end">
     <li class="nav-item">
       <a class="nav-link active" href="#about">About</a>
@@ -65,13 +40,18 @@
     <div class="text">
       <h1>MICHELLE TRAN</h1>
       <h2>SOFTWARE ENGINEER</h2>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/mich-tran" target="_blank"><i class="fa fa-linkedin-square"
+            aria-hidden="true"></i></a>
+        <a href="https://github.com/meeshers" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+      </div>
     </div>
   </div>
 
   <div class="container">
     <div id="about">
       <h2>About</h2>
-      <hr>
+      <div class="hr"></div>
       <p class="about">Hello! I'm Michelle, a software engineer based in the Orange County Area. I seek to expand and
         solidify my knowledge and put them into practice by creating personal projects and collaborating with other
         developers. I aim to create user-friendly designs and often draw inspiration from nature, arcade games, video
@@ -80,7 +60,7 @@
 
     <div class="title">
       <h2>Projects</h2>
-      <hr>
+      <div class="hr"></div>
     </div>
     <div id="projects">
 
@@ -101,6 +81,7 @@
           <a href="https://github.com/meeshers/cute_keebs" class="btn btn-primary">Code</a>
           <a href="https://dream-keebs.herokuapp.com/" class="btn btn-primary">Demo</a>
 
+          <p>Technologies used:</p>
           <div class="technologies">
             <span class="badge badge-pill badge-secondary">HTML/CSS</span>
             <span class="badge badge-pill badge-secondary">Javascript</span>
@@ -124,7 +105,7 @@
             validation.</p>
           <a href="https://github.com/meeshers/collabathon-ux" class="btn btn-primary">Code</a>
 
-
+          <p>Technologies used:</p>
           <div class="technologies">
             <span class="badge badge-pill badge-secondary">HTML/CSS</span>
             <span class="badge badge-pill badge-secondary">Javascript</span>
@@ -146,6 +127,7 @@
             produce. My contributions include stylizing of client-side interface and user authentication.</p>
           <a href="https://github.com/meeshers/farm-to-table" class="btn btn-primary">Code</a>
 
+          <p>Technologies used:</p>
           <div class="technologies">
             <span class="badge badge-pill badge-secondary">HTML/CSS</span>
             <span class="badge badge-pill badge-secondary">Javascript</span>
@@ -168,6 +150,7 @@
           <a href="https://github.com/meeshers/beat-that" class="btn btn-primary">Code</a>
           <a href="https://meeshers.github.io/beat-that/" class="btn btn-primary">Demo</a>
 
+          <p>Technologies used:</p>
           <div class="technologies">
             <span class="badge badge-pill badge-secondary">HTML/CSS</span>
             <span class="badge badge-pill badge-secondary">Javascript</span>
@@ -187,6 +170,7 @@
             that search term.</p>
           <a href="https://github.com/meeshers/react-pics" class="btn btn-primary">Code</a>
 
+          <p>Technologies used:</p>
           <div class="technologies">
             <span class="badge badge-pill badge-secondary">HTML/CSS</span>
             <span class="badge badge-pill badge-secondary">Javascript</span>
@@ -210,6 +194,7 @@
           </p>
           <a href="https://github.com/meeshers/php-social-media" class="btn btn-primary">Code</a>
 
+          <p>Technologies used:</p>
           <div class="technologies">
             <span class="badge badge-pill badge-secondary">HTML/CSS</span>
             <span class="badge badge-pill badge-secondary">Javascript</span>
@@ -238,37 +223,40 @@
         <p>Technologies used: html/css, python, mongoDB, mongoose, javascript, semantic ui, psql, django</p>
       </div>
     </div> -->
-  </div>
 
-  <div id="contact">
-    <h2>Contact</h2>
-    <hr>
-    <p>Interested in working with me? Fill out the following form below!</p>
-    <div class="contact">
-      <form action="https://formspree.io/mnqglbbq" method="POST">
-        <label>Name: </label>
-        <br>
-        <input type="text" name="name" required>
-        <br>
-        <label>Email: </label>
-        <br>
-        <input type="email" name="_replyto" required>
-        <br>
-        <label>Message: </label>
-        <br>
-        <textarea type="text" name="message" required></textarea>
-        <br>
-        <input class="submit" type="submit" value="Send">
-      </form>
+    <div id="contact">
+      <h2>Contact</h2>
+      <div class="hr"></div>
+      <div class="container">
+        <p>Interested in working with me? Fill out the following form below!</p>
+        <div class="contact">
+          <form action="https://formspree.io/mnqglbbq" method="POST">
+            <label>Name: </label>
+            <br>
+            <input type="text" name="name" required>
+            <br>
+            <label>Email: </label>
+            <br>
+            <input type="email" name="_replyto" required>
+            <br>
+            <label>Message: </label>
+            <br>
+            <textarea type="text" name="message" required></textarea>
+            <br>
+            <input class="submit btn btn-primary" type="submit" value="Send">
+          </form>
+        </div>
+      </div>
     </div>
-  </div>
 
   </div>
 
   <div class="footer">
     &copy;2020 Michelle Tran
+    <a href="https://www.linkedin.com/in/mich-tran" target="_blank"><i class="fa fa-linkedin-square"
+      aria-hidden="true"></i></a>
+  <a href="https://github.com/meeshers" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
   </div>
-  </main>
 </body>
 
 </html>
